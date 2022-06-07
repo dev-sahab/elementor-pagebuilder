@@ -15,7 +15,8 @@ const headingOutput =  document.getElementById('heading-output');
 const hAlignment = document.querySelectorAll('#heading-editor #alignment input')
 const hfontWeight = document.querySelector('#heading-editor #font-weight')
 const hfontSize = document.querySelector('#heading-editor #font-size')
-const hColor = document.querySelector('#heading-editor #color')
+const hColor = document.querySelector('#heading-editor #color');
+const hFontFamily = document.querySelector('#heading-editor #font-family');
 
 headingInput.onkeyup = () => {
     
@@ -50,4 +51,7 @@ hfontSize.oninput = () => {
 hColor.oninput = () => {
     headingOutput.style.color = hColor.value;
 }
-console.log(hColor.value);
+
+hFontFamily.onchange = () => {
+    headingOutput.style.fontFamily = hFontFamily.value;
+}
