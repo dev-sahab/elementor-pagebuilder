@@ -9,18 +9,6 @@ switcher.onclick = () => {
     icon.classList.toggle('rotate');
 }
 
-//scrollbar
-
-const scrollbarVisible = (element) => {
-    return element.scrollHeight > element.clientHeight;
-}
-
-if (scrollbarVisible(eidtorBody) == true) {
-    eidtorBody.classList.add('scroll');
-}else{
-    eidtorBody.classList.remove('scroll');
-}
-
 
 
 
@@ -73,3 +61,20 @@ hFontFamily.onchange = () => {
 
 
 
+
+
+//scrollbar for chrome
+const isChrome = !!window.chrome;
+
+const scrollbarVisible = (element) => {
+    return element.scrollHeight > element.clientHeight;
+}
+
+if (scrollbarVisible(eidtorBody) == true && isChrome == true
+) {
+    eidtorBody.classList.add('scroll');
+}else{
+    eidtorBody.classList.remove('scroll');
+}
+
+console.log(isChrome);
