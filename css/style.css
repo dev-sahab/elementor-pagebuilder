@@ -37,6 +37,9 @@
 .preview-inner{
 	width: 100%
 }
+#switcher{
+	cursor: pointer;
+}
 .switcher-inner{
 	position: absolute;
 	left: 100%;
