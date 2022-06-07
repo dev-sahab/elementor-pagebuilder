@@ -97,7 +97,7 @@
 #eidtor-body{
 	height: calc(100vh - 85px);
 	padding: 0 15px;
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 ion-icon{
@@ -151,6 +151,10 @@ ion-icon{
 
 
    /* width */
+
+#eidtor-body:hover{
+	overflow-y: auto;
+}
 #eidtor-body::-webkit-scrollbar {
 	width: 4px;
   }
@@ -170,3 +174,6 @@ ion-icon{
 #eidtor-body::-webkit-scrollbar-thumb:hover {
 	background: yellowgreen;
   } 
+  #eidtor-body.scroll:hover{
+	padding-right: 11px;
+  }

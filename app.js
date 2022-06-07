@@ -2,11 +2,27 @@
 const switcher = document.getElementById('switcher');
 const editorPanel = document.getElementById('editor-panel');
 const icon = document.querySelector('.icon')
+const eidtorBody = document.getElementById('eidtor-body');
 
 switcher.onclick = () => {
     editorPanel.classList.toggle('remove');
     icon.classList.toggle('rotate');
 }
+
+//scrollbar
+
+const scrollbarVisible = (element) => {
+    return element.scrollHeight > element.clientHeight;
+  }
+  
+
+  if (scrollbarVisible(eidtorBody) == true) {
+    eidtorBody.classList.add('scroll');
+  }else{
+    eidtorBody.classList.remove('scroll');
+  }
+
+
 
 
 // get heading elements
@@ -55,3 +71,6 @@ hColor.oninput = () => {
 hFontFamily.onchange = () => {
     headingOutput.style.fontFamily = hFontFamily.value;
 }
+
+
+
