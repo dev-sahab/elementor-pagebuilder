@@ -31,11 +31,7 @@
 	color: #fff;
 }
 #preview-panel{
-	background: yellow;
 	flex: 1
-}
-.preview-inner{
-	width: 100%
 }
 #switcher{
 	cursor: pointer;
@@ -69,6 +65,7 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 .header{
 	display: flex;
