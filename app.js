@@ -10,7 +10,6 @@ switcher.onclick = () => {
     editorPanel.classList.toggle('remove');
     icon.classList.toggle('rotate');
 }
-console.log(icon);
 
 
 // get heading elements
@@ -107,12 +106,23 @@ const scrollbarVisible = (element) => {
     return element.scrollHeight > element.clientHeight;
 }
 
-if (scrollbarVisible(eidtorBody) == true && isChrome == true
-) {
-    eidtorBody.classList.add('scroll');
-}else{
-    eidtorBody.classList.remove('scroll');
+toolLists.forEach( item => {
+    item.onclick = () => {
+        if (scrollbarVisible(eidtorBody) == true && isChrome == true) {
+            eidtorBody.classList.add('scroll');
+        }else{
+            eidtorBody.classList.remove('scroll');
+        }
+    }
+})
+eidtorBody.onmouseenter = () => {
+    if (scrollbarVisible(eidtorBody) == true && isChrome == true) {
+        eidtorBody.classList.add('scroll');
+    }else{
+        eidtorBody.classList.remove('scroll');
+    }
 }
+
 
 
 
