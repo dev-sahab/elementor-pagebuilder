@@ -157,23 +157,30 @@ ion-icon{
 }
 #eidtor-body::-webkit-scrollbar {
 	width: 4px;
-  }
-  
+}
+
   /* Track */
 #eidtor-body::-webkit-scrollbar-track {
 	background: #d4d4d4;
-  }
-  
+}
+
   /* Handle */
 #eidtor-body::-webkit-scrollbar-thumb {
 	background: #888;
 	border-radius: 10px
-  }
-  
+}
+
   /* Handle on hover */
 #eidtor-body::-webkit-scrollbar-thumb:hover {
 	background: yellowgreen;
-  } 
-  #eidtor-body.scroll:hover{
+}
+#eidtor-body.scroll:hover{
 	padding-right: 11px;
-  }
+}
+
+#empty-sec .box{
+	padding: 3rem 2rem;
+	border: 2px dashed #d5dadf;
+	text-align: center;
+	color: #6e6e6e;
+}
