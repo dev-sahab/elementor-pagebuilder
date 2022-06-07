@@ -13,14 +13,13 @@ switcher.onclick = () => {
 
 const scrollbarVisible = (element) => {
     return element.scrollHeight > element.clientHeight;
-  }
-  
+}
 
-  if (scrollbarVisible(eidtorBody) == true) {
+if (scrollbarVisible(eidtorBody) == true) {
     eidtorBody.classList.add('scroll');
-  }else{
+}else{
     eidtorBody.classList.remove('scroll');
-  }
+}
 
 
 
