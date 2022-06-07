@@ -1,7 +1,7 @@
 
 const switcher = document.getElementById('switcher');
 const editorPanel = document.getElementById('editor-panel');
-const icon = document.querySelector('.icon')
+const icon = document.querySelector('.swicher-icon')
 const eidtorBody = document.getElementById('eidtor-body');
 
 const emptySec = document.getElementById('empty-sec');
@@ -10,7 +10,7 @@ switcher.onclick = () => {
     editorPanel.classList.toggle('remove');
     icon.classList.toggle('rotate');
 }
-
+console.log(icon);
 
 
 // get heading elements
