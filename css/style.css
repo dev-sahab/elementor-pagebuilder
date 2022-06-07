@@ -23,6 +23,8 @@
 	min-height: 100vh;
 	position: relative;
 	transition: all .3s ease-in-out;
+	position: sticky;
+	top: 0;
 }
 .editor-inner{
 	width: 300px;
@@ -31,7 +33,7 @@
 	color: #fff;
 }
 #preview-panel{
-	flex: 1
+	flex: 1;
 }
 #switcher{
 	cursor: pointer;
@@ -50,6 +52,10 @@
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	padding-right: 2px;
+	z-index: 999;
+}
+.switcher-inner:hover{
+	background: #71d7f7;
 }
 #editor-panel.remove{
 	margin-left: -300px;
