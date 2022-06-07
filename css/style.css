@@ -93,3 +93,11 @@
 #eidtor-body{
 	height: calc(100vh - 85px)
 }
+
+ion-icon{
+	pointer-events: none;
+}
+.grid-icon,
+.humberger{
+	cursor: pointer;
+}

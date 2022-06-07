@@ -7,3 +7,6 @@ switcher.onclick = () => {
     editorPanel.classList.toggle('remove');
     icon.classList.toggle('rotate');
 }
+
+
+
