@@ -149,3 +149,25 @@ ion-icon{
 	margin-bottom: 5px;
 	display: block;
 }
+
+
+   /* width */
+#eidtor-body::-webkit-scrollbar {
+	width: 4px;
+  }
+  
+  /* Track */
+#eidtor-body::-webkit-scrollbar-track {
+	background: #d4d4d4;
+  }
+  
+  /* Handle */
+#eidtor-body::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px
+  }
+  
+  /* Handle on hover */
+#eidtor-body::-webkit-scrollbar-thumb:hover {
+	background: yellowgreen;
+  } 
